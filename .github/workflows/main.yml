@@ -38,6 +38,7 @@ jobs:
     env:
       SNYK_ORG_ID: ${{ secrets.SNYK_ORG_ID }}
       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      GH_PAT: ${{ secrets.GH_PAT }} 
       SNYK_SDLC: DEVELOPMENT
       SNYK_REMOTE_REPO_URL: https://github.com/${{ inputs.repo }}
       SNYK_TARGET_REF: ${{ inputs.branch }}-${{ github.run_id }}
