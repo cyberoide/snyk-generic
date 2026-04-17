@@ -65,7 +65,7 @@ jobs:
 
       - name: Configure Snyk
         run: |
-          snyk config set endpoint=https://api.us.snyk.io
+          snyk config set endpoint=https://api.snyk.io
           snyk auth "$SNYK_TOKEN"
 
       # =========================
